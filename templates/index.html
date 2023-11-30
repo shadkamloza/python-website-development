@@ -17,8 +17,8 @@
     </style>
   </head>
   <body>
-  <div class="container">
-    <h1 class="text-center mt-2 mb-4">Body Goes Here</h1>
+    {% include 'navbar.html' %} 
+  <div class="container"> 
     <img id="banner" class="img-fluid" src="static/imag1.jpg">
     <h2 class="text-center mt-2 mb-4">Heading Too</h2>
     <p >
@@ -26,10 +26,9 @@
     </p>
       {% for post in posts %}
         {% include 'jobitem.html' %}
-      {% endfor %}
-    <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-    <h2 class="text-center mt-2 mb-4">About Us</h2>
+      {% endfor %} 
     <button type="button" class="btn btn-primary">Contact Us</button>
+    {% include 'footer.html' %}
   </div>
   </body>
 </html>
